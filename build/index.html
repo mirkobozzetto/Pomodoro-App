@@ -6,27 +6,39 @@
     <link rel="stylesheet" href="css/style.css" />
     <title>Pomodoro App</title>
   </head>
-  <body>
-    <div id="navbar">
-      <h1>Pomodoro App</h1>
-    </div>
-    <div id="timer-container">
-      <input id="minutes-input" type="number" value="25" />
-      <div id="seconds-container">
-        <span id="seconds">00</span>
+  <body class="bg-lime-200 ml-5">
+    <div class="">
+      <div id="navbar" class="mt-7 mb-10 text-4xl">
+        <h1>Pomodoro App</h1>
       </div>
-      <button id="start-btn">start</button>
-      <button id="stop-btn">stop</button>
+      <div id="timer-container">
+        <input id="minutes-input" type="number" value="25" class="w-12" />
+        <div id="seconds-container">
+          <span id="seconds">00</span>
+        </div>
+        <button id="start-btn">start</button>
+        <button id="stop-btn">stop</button>
+      </div>
+      <div id="session-info">
+        <div id="completed-sessions"></div>
+        <p>
+          Nombre de sessions :<br />
+          <input id="session-number" type="number" value="3" class="w-12" />
+        </p>
+        <p>
+          Temps de pause : <br /><input
+            id="break-time"
+            type="number"
+            value="5"
+            class="w-12"
+          />
+        </p>
+        <p>
+          Temps de repos : <br />
+          <input id="rest-time" type="number" value="15" class="w-12" />
+        </p>
+      </div>
+      <script src="javascript/main.js"></script>
     </div>
-    <div id="session-info">
-      <div id="completed-sessions"></div>
-      <p>
-        Nombre de sessions :
-        <input id="session-number" type="number" value="3" />
-      </p>
-      <p>Temps de pause : <input id="break-time" type="number" value="5" /></p>
-      <p>Temps de repos : <input id="rest-time" type="number" value="15" /></p>
-    </div>
-    <script src="javascript/main.js"></script>
   </body>
 </html>
